@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .disa-logo {
     width: 7.5%;
   }
@@ -8,4 +8,59 @@
   .disa-logo {
     width: 5%;
   }
+} */
+
+/* Footer starts */
+@media (width > 400px) {
+  .links-column {
+    text-align: left;
+  }
+
+  footer.top .links {
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 50px;
+  }
+
+  footer.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+  }
+
+  footer.top .socials {
+    left: 0;
+    translate: 0;
+  }
+
+  footer.top > img {
+    margin: 0 0 50px;
+  }
 }
+
+@media (width >= 640px) {
+  footer {
+    margin: 0 auto;
+    /* max-width: 580px; */
+    padding: 0;
+  }
+
+  footer.top .links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer.top .socials {
+    position: static;
+  }
+
+  footer.bottom {
+    justify-content: flex-start;
+  }
+
+  .socials-column :is(h2, p) {
+    display: block;
+  }
+}
+/* Footer ends */
