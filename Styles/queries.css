@@ -1,0 +1,11 @@
+@media (max-width: 600px) {
+  .disa-logo {
+    width: 7.5%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1920px) {
+  .disa-logo {
+    width: 5%;
+  }
+}
