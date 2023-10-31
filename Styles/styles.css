@@ -10,7 +10,7 @@
   --primary-color: #f4694d;
   --primary-color: #f4694d;
   --accent-color: #f7f6f0;
-  --font-color: #24282c;
+  --font-color: #131313;
   --menu-background-color: #222831;
 
   --color-primary: #2f67ec;
@@ -47,6 +47,18 @@ body {
   color: var(--accent-color);
 }
 
+.menu-logo {
+  margin-left: 1.6rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  width: 3.6rem;
+  z-index: 99;
+}
+
+.logo-home {
+  display: flex;
+}
+
 nav {
   position: relative;
   background: #1f2635;
@@ -70,6 +82,7 @@ nav .item {
   text-align: center;
   text-decoration: none;
   color: var(--accent-color);
+  margin-left: 1rem;
 }
 
 .dropdown {
@@ -173,10 +186,10 @@ footer.top {
 }
 
 footer.bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column-reverse;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* flex-direction: column-reverse; */
   gap: 8px;
   padding: 20px 0;
   text-align: center;
@@ -185,14 +198,35 @@ footer.bottom {
 footer.top .links {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 10px;
+  /* gap: 10px; */
   margin-bottom: 30px;
+  justify-content: space-between;
 }
 
 .links-column {
   display: grid;
   gap: 10px;
-  text-align: center;
+
+  min-height: 3.4rem;
+  padding: 2rem;
+  line-height: 3.6rem;
+  letter-spacing: 0;
+  font-weight: 200;
+
+  border-left: 0.1rem solid #f7f6f0;
+}
+
+.links-column-header {
+  min-height: 3.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.2rem;
+  border-radius: 8px;
+  font-weight: 200;
+}
+
+.business-hours {
+  display: flex;
+  justify-content: space-between;
 }
 
 footer h2 {
@@ -211,14 +245,14 @@ footer a {
 
 footer p {
   margin: 0;
+  justify-content: center;
 }
 
 .copyright {
   font-size: 1.6rem;
   color: var(--color-footer);
-  margin-left: 2rem;
 }
-
+/* 
 footer.top .socials {
   position: absolute;
   left: 50%;
@@ -228,33 +262,22 @@ footer.top .socials {
   align-items: center;
   gap: 18px;
   height: 56px;
+} */
+
+.social-icons {
+  width: 2.4rem;
 }
 
-footer.top .socials > a {
-  font-size: 2.4rem;
-}
-
-.socials-column :is(h2, p) {
+/* .socials-column :is(h2, p) {
   display: none;
-}
+} */
 /* Footer end */
-
-.disa-logo {
-  width: 7.5%;
-  position: absolute;
-  z-index: 99999;
-  margin: 5px;
-}
 
 h1 {
   color: var(--font-color);
   font-size: 2.4rem;
   top: 0;
   padding: 20px;
-}
-
-p {
-  color: var(--font-color);
 }
 
 .accreditation {
