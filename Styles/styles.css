@@ -8,7 +8,6 @@
   font-size: 62.5%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --primary-color: #f4694d;
-  --primary-color: #f4694d;
   --accent-color: #f7f6f0;
   --font-color: #131313;
   --menu-background-color: #222831;
@@ -241,6 +240,9 @@ footer h2 {
 footer a {
   color: var(--color-footer);
   text-decoration: none;
+}
+footer a:hover {
+  color: var(--primary-color);
 }
 
 footer p {
