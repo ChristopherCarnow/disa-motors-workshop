@@ -36,6 +36,11 @@ body {
   margin-bottom: 20px;
 }
 
+.accreditation {
+  width: 8rem;
+  margin-right: 1rem;
+}
+
 .menu-bar {
   position: sticky;
   top: 0;
@@ -214,7 +219,6 @@ footer.bottom {
 footer.top .links {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  /* gap: 10px; */
   margin-bottom: 30px;
   justify-content: space-between;
 }
@@ -263,6 +267,8 @@ footer a:hover {
 }
 
 footer p {
+  color: var(--color-footer);
+  text-decoration: none;
   margin: 0;
   justify-content: center;
 }
@@ -279,7 +285,9 @@ footer p {
 .social-icons:hover {
   transform: scale(1.1);
 }
-
+.google-map {
+  margin-bottom: 2rem;
+}
 /* Footer end */
 
 h1 {
@@ -287,10 +295,6 @@ h1 {
   font-size: 2.4rem;
   top: 0;
   padding: 20px;
-}
-
-.accreditation {
-  max-width: 10%;
 }
 
 /* About Us & Cards start */
@@ -375,5 +379,4 @@ h1 {
 .card:hover .action-bottom-bar a {
   opacity: 1;
 }
-
 /* About Us & Cards end */
