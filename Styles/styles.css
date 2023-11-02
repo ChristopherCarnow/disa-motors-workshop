@@ -30,7 +30,9 @@ body {
 
 .hero-image {
   width: 100%;
-  filter: grayscale(60%);
+  filter: grayscale(80%);
+  /* background: #000; */
+  /* opacity: 0.5; */
   margin-bottom: 20px;
 }
 
@@ -105,6 +107,14 @@ nav .item {
   background: #254fb5;
 }
 
+.shop-name {
+  display: flex;
+  justify-content: space-between;
+}
+.shop-est {
+  font-size: 1.6rem;
+}
+
 .underline {
   height: 6px;
   background: var(--color-primary);
@@ -143,7 +153,7 @@ nav .item:nth-child(5):hover ~ .underline {
 
 .divider {
   border-top: 0.1rem solid var(--menu-background-color);
-  margin: 1rem 5rem 4rem 5rem;
+  margin: 1rem 8rem 4rem 8rem;
 }
 .divider-heading {
   margin-top: 10rem;
@@ -196,6 +206,9 @@ footer.bottom {
   gap: 8px;
   padding: 20px 0;
   text-align: center;
+
+  font-weight: 200;
+  font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 footer.top .links {
@@ -280,7 +293,13 @@ h1 {
   max-width: 10%;
 }
 
-/* Cards start */
+/* About Us & Cards start */
+.about-us-text {
+  margin: 0 8rem 4rem 8rem;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  letter-spacing: 0.05rem;
+}
 
 .container {
   display: flex;
@@ -317,12 +336,14 @@ h1 {
   font-size: 1.8rem;
   margin-bottom: 1.6rem;
   line-height: 1.384615385;
+  letter-spacing: 0.05rem;
 }
 
 .content > p {
   font-size: 1.6rem;
   line-height: 1.55;
   font-weight: 200;
+  letter-spacing: 0.05rem;
 }
 
 .content a {
@@ -355,4 +376,4 @@ h1 {
   opacity: 1;
 }
 
-/* Cards end */
+/* About Us & Cards end */
