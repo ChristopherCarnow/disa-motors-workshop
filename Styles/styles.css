@@ -11,6 +11,7 @@
   --accent-color: #f7f6f0;
   --font-color: #131313;
   --menu-background-color: #222831;
+  --color-divider: rgba(192, 192, 192, 0.5);
 
   --color-primary: #2f67ec;
   --color-footer-background: #1f1d58;
@@ -116,8 +117,35 @@ nav .item {
   display: flex;
   justify-content: space-between;
 }
-.shop-est {
-  font-size: 1.6rem;
+
+.hero {
+  position: relative;
+}
+.hero-btn {
+  background-color: var(--color-primary);
+  color: var(--accent-color);
+  padding: 1.6rem 5.6rem;
+  border: 0.5px solid var(--accent-color);
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+}
+.hero-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--color-primary);
+  transition: 0.3s;
+}
+.contact-us-btn {
+  top: 60%;
+  left: 18%;
+}
+.shop-btn {
+  top: 60%;
+  right: 18%;
 }
 
 .underline {
@@ -157,7 +185,7 @@ nav .item:nth-child(5):hover ~ .underline {
 /* Menu end */
 
 .divider {
-  border-top: 0.1rem solid var(--menu-background-color);
+  border-top: 0.1rem solid var(--color-divider);
   margin: 1rem 8rem 4rem 8rem;
 }
 .divider-heading {
@@ -280,6 +308,10 @@ footer p {
 
 .social-icons {
   width: 3.2rem;
+}
+
+.disa-facebook {
+  margin-bottom: 0.8rem;
 }
 
 .social-icons:hover {
