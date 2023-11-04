@@ -70,6 +70,7 @@ nav {
   font-weight: 400;
   font-size: 0;
   display: flex;
+  /* justify-content: space-evenly; */
   padding: 0;
   width: 100%;
 }
@@ -137,6 +138,7 @@ nav .item {
 .hero-btn:hover {
   background-color: var(--accent-color);
   color: var(--color-primary);
+  border: 0.5px solid var(--color-primary);
   transition: 0.3s;
 }
 .contact-us-btn {
@@ -159,9 +161,9 @@ nav .item {
   transition: 0.35s;
 }
 
-nav .item:hover > .dropdown > div {
+/* nav .item:hover > .dropdown > div {
   transform: translate(0);
-}
+} */
 
 nav .item:nth-child(1):hover ~ .underline {
   transform: translate(0, 0);
@@ -208,6 +210,60 @@ nav .item:nth-child(5):hover ~ .underline {
   list-style-type: none;
 }
 /* Welcome message end */
+
+/* Services cards start */
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* align-items: center;
+  justify-content: space-between; */
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 200;
+  font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  gap: 2rem;
+}
+
+.service-engine {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.service-card {
+  background-color: var(--accent-color);
+  border-radius: 2rem;
+  padding: 2rem;
+  line-height: 4rem;
+  padding: 3rem;
+}
+.service-card-header {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+
+/* @media (width <= 740px) {
+  .card {
+    margin: 0 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .card h2 {
+    margin-right: 0;
+    font-size: 26px;
+  }
+
+  .card img {
+    margin: -100px 0 30px 0;
+    width: 100%;
+    max-width: 1000px;
+  }
+} */
+/* Services cards end */
 
 /* Footer start */
 footer {
@@ -282,7 +338,7 @@ footer h2 {
   font-size: 1.6rem;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   color: rgb(255 255 255 / 96%);
 }
 
@@ -327,7 +383,7 @@ h1 {
 
 /* About Us & Cards start */
 .about-us-text {
-  margin: 0 8rem 4rem 8rem;
+  margin: 4rem 0rem;
   font-size: 1.6rem;
   line-height: 4rem;
   letter-spacing: 0.05rem;
