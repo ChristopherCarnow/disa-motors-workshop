@@ -10,6 +10,31 @@
   }
 } */
 
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .menu-bar {
+    /* padding: 1rem; */
+  }
+
+  .services {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 1rem;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* ...; */
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* ...; */
+}
+
 /* Footer starts */
 @media (width > 400px) {
   .links-column {
@@ -63,3 +88,25 @@
   }
 }
 /* Footer ends */
+
+/* @media (width <= 740px) {
+  .card {
+    margin: 0 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .card h2 {
+    margin-right: 0;
+    font-size: 26px;
+  }
+
+  .card img {
+    margin: -100px 0 30px 0;
+    width: 100%;
+    max-width: 1000px;
+  }
+} */
